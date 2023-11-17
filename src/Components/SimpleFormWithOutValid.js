@@ -112,65 +112,108 @@
 //     </div>
 // );
 // };
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+
+// const SimpleFormWithOutValid = () => {
+//     const [username, setUsername] = useState("");
+//     const [password, setPassword] = useState("");
+//     const [errors, setErrors] = useState({});
+
+//     const handleChangeUsername = (e) => {
+//         if (username.trim() === "") {
+//             setErrors((error) => ({ ...error, username: "enter valid name " }))
+//         } else if (username.length <= 6) {
+//             setErrors((error) => ({ ...error, username: "enter minimum 6 char" }))
+//         } else {
+//             setErrors((error) => ({ ...error, username: "" }))
+//         }
+
+//         return Object.values(errors).some(error => error !== "");
+//     }
+
+//     const handleChangePassword = (e) => {
+//         if (password.trim() === "") {
+//             setErrors((error) => ({ ...error, password: "enter password" }))
+//         } else {
+//             setErrors((error) => ({ ...error, password: "" }))
+//         }
+
+//         return Object.values(errors).some(error => error !== "");
+//     }
+
+//     const handleClick = (event) => {
+//         event.preventDefault();
+
+//         if (!handleChangeUsername() || !handleChangePassword()) {
+//             alert("Form has errors. Please fix them.");
+//         } else {
+//             alert("Form submitted successfully.");
+//         }
+//     }
+
+//     return (
+//         <div>
+//             <form>
+//                 <br></br>
+//                 <label>Enter Your Name:</label><br></br>
+//                 <input type='text' value={username} onChange={(e) => { setUsername(e.target.value) }}></input><br></br>
+//                 <div style={{ color: "red" }}>{errors.username}</div>
+//                 <label>Enter Password:</label><br></br>
+//                 <input type='password' value={password} onChange={(e) => { setPassword(e.target.value) }}></input><br></br>
+//                 <div style={{ color: "red" }}>{errors.password}</div>
+//                 <br></br>
+//                 <button onClick={handleClick}>Submit</button>
+//             </form>
+//         </div>
+//     )
+// }
+
+// export default SimpleFormWithOutValid;
+
+// import React, { useState } from 'react'
+
+// const SimpleFormWithOutValid = () => {
+//     const [username, setUsername] = useState("");
+//     const [password, setPassword] = useState("");
+
+//     const  handleUsernameChange = (e) =>{
+//         setUsername(e.target.value);
+
+//     }
+//     const  handlePasswordChange = (e) =>{
+//         setPassword(e.target.value);
+
+//     }
+
+
+//     const handleSubmit = (event)=>{
+//         event.preventDefault();
+//         alert('Form Data submitted.', {username,password});
+//     }
+// return (
+//     <div>
+//         <form>
+//         <label>enter your name:</label><br></br>
+//         <input type='text' value={username} onChange={handleUsernameChange}></input><br></br>
+//         <label>enter your password</label><br></br>
+//         <input type='text' value={password} onChange={handlePasswordChange}></input><br></br>
+//         <button onClick={handleSubmit}>Submit</button>
+
+
+//         </form>
+
+//     </div>
+// )
+// }
+
+// export default SimpleFormWithOutValid;
+
+import React from 'react'
 
 const SimpleFormWithOutValid = () => {
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
-    const [errors, setErrors] = useState({});
-
-    const handleChangeUsername = (e) => {
-        if (username.trim() === "") {
-            setErrors((error) => ({ ...error, username: "enter valid name " }))
-        } else if (username.length <= 6) {
-            setErrors((error) => ({ ...error, username: "enter minimum 6 char" }))
-        } else {
-            setErrors((error) => ({ ...error, username: "" }))
-        }
-
-        return Object.values(errors).some(error => error !== "");
-    }
-
-    const handleChangePassword = (e) => {
-        if (password.trim() === "") {
-            setErrors((error) => ({ ...error, password: "enter password" }))
-        } else {
-            setErrors((error) => ({ ...error, password: "" }))
-        }
-
-        return Object.values(errors).some(error => error !== "");
-    }
-
-    const handleClick = (event) => {
-        event.preventDefault();
-
-        if (!handleChangeUsername() || !handleChangePassword()) {
-            alert("Form has errors. Please fix them.");
-        } else {
-            alert("Form submitted successfully.");
-        }
-    }
-
-    return (
-        <div>
-            <form>
-                <br></br>
-                <label>Enter Your Name:</label><br></br>
-                <input type='text' value={username} onChange={(e) => { setUsername(e.target.value) }}></input><br></br>
-                <div style={{ color: "red" }}>{errors.username}</div>
-                <label>Enter Password:</label><br></br>
-                <input type='password' value={password} onChange={(e) => { setPassword(e.target.value) }}></input><br></br>
-                <div style={{ color: "red" }}>{errors.password}</div>
-                <br></br>
-                <button onClick={handleClick}>Submit</button>
-            </form>
-        </div>
-    )
+return (
+    <div>SimpleFormWithOutValid</div>
+)
 }
 
-export default SimpleFormWithOutValid;
-
-
-
-
-// export default SimpleFormWithOutValid
+export default SimpleFormWithOutValid

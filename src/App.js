@@ -6,6 +6,9 @@ import { BrowserRouter as Router , Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home';
 import SimpleFormWithOutValid from './Components/SimpleFormWithOutValid';
+import FormOne from './Components/FormOne';
+import FormTwo from './Components/FormTwo';
+import FormThree from './Components/FormThree';
 
 
 function App() {
@@ -13,6 +16,9 @@ function App() {
     
   <Router>
     <Navbar/>
+    <FormOne/>
+    <FormTwo/>
+    <FormThree/>
     <SimpleFormWithOutValid/>
     <Routes>
     <Route path='/home' element={<Home/>}/>
